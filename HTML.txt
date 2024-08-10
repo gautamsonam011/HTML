@@ -1,0 +1,75 @@
+What is HTML?
+
+1. HTML stands for Hyper Text Markup Language.
+2. HTML is the standard Markup language for creating web pages.
+3. HTML describes the stracture of a web pages.
+4. HTML consists of a series of elements.
+5. HTML elements tell the browser how to display the content.
+6. HTML elements label pieces of content such as "this is heading", "This is a paragraph", "This is a link", etc.
+
+
+What is an HTML element?
+
+An HTML element is defined by a start tag and some content and an end tag.
+
+<tagname>Content</tagname>
+
+HTML Editors :-----------
+
+A simple text Editor is all we need to learn HTML
+
+learn html using notepad or TextEdit
+
+HTML is not case Sensitive 
+
+<h1> means the same as <h1>
+
+What is html attributes?
+
+HTML attributes provide additional information about HTML elements.
+1. All HTML elements can have attributes.
+2. Attributes are always specified in the start tag.
+3. Attributes usually come in name/value pairs like: name="value"
+
+
+href use in <a> tag
+src use in <img> tag
+title and style
+alt lang
+
+What is HTML heading?
+
+HTML headings are titles or subtitles that you want to display on a webpage.
+
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+
+What is HTML paragraph?
+
+A paragraph always starts on a new line, and is usually a block of text.
+
+<p></p>
+
+HTML Horizontal Rules  <hr>
+
+The poem problem------>
+<pre> This poem will display on a single line.
+
+What is HTML Text Formatting?
+
+HTML contains sveral elements for defining text with a special meaning.
+
+<b> Bold text
+<strong> Important text
+<i> Italic text
+<em> Emphasized text
+<mark> Marked text
+<small> Smaller text
+<del> Deleted text
+<ins> Inserted text
+<sub> Subscript text
+<sup> Superscript text
