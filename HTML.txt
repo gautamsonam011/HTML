@@ -53,7 +53,7 @@ What is HTML paragraph?
 A paragraph always starts on a new line, and is usually a block of text.
 
 <p></p>
-
+ 
 HTML Horizontal Rules  <hr>
 
 The poem problem------>
@@ -73,3 +73,21 @@ HTML contains sveral elements for defining text with a special meaning.
 <ins> Inserted text
 <sub> Subscript text
 <sup> Superscript text
+
+
+What is Quotation?
+
+We will go through the <blockquote>, <q>, <abbr>, <address>, <cite> and <bdo> HTML elements.
+
+HTML <blockquote> element defines a section that is quoted from another source.
+
+usually indent <blockquote> elements
+
+HTML <q> for short Quotations---->
+
+The html <q> tag defines a short Quotation.
+
+Browsers normally insert Quotation marks around the Quotation.
+
+HTML <abbr> for Abbreviations---------->
+

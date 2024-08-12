@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks in HTML</title>
+</head>
+<body>
+    <a href="https://www.youtube.com/">Youtube</a>
+    <!-- The target attribute -->
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.google.com/"> Google</a></p>
+    <h2>Relative URLs</h2>
+    <p><a href="CSS.html">CSS</a></p>
+
+    <!-- Link to an Email Address -->
+    <a href="mailto:gautamsonam011@gmail.com">Send Email</a>
+    <button onclick="document.location='Styles.html'">Style</button>
+
+    <a href="https://www.youtube.com/" title="Go to Youtube">Youtube</a>
+
+    <!-- HTML Links - Different Colors -->
+
+    <style>
+        .clr{
+            color:green;
+            background-color: transparent;
+            text-decoration: none;
+                }
+        .clr:hover{
+            color:pink;
+            background-color: aqua;
+            text-decoration: underline;
+        }
+    </style>
+
+    <a href="https://www.youtube.com/" class="clr">Youtube</a>
+
+</body>
+</html>
