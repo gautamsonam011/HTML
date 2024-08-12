@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables In HTML</title>
+    <style>
+        table, th, td{
+            border: 1px solid blueviolet;
+            border-collapse: collapse;
+            border-radius: 10px;
+        }
+        th td {
+            background-color: darkolivegreen;
+            padding-top:15px;
+            padding-left: 10px;
+            padding-bottom: 15px;
+            padding-right: 10px;
+            border-spacing: 30px;
+        }
+        /* 
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+        */
+    </style>
+</head>
+<body>
+    <table style="width:100%;">
+        <tr>
+            <th colspan="2">Home</th>
+            <th></th>
+            <th rowspan="2">About</th>
+
+            <th>Contact</th>
+        </tr>
+        <tr style="background-color:aqua;">
+            <td>Hello World</td>
+            <td></td>
+            <td>This is a table</td>
+            <td>Contact Number</td>
+        </tr>
+        <colgroup>
+            <col span="2" style="background-color:brown;">
+            </colgroup>
+    </table>
+    
+</body>
+</html>

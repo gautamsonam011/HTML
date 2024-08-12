@@ -91,3 +91,21 @@ Browsers normally insert Quotation marks around the Quotation.
 
 HTML <abbr> for Abbreviations---------->
 
+
+
+==========What is semantics====>
+
+Semantic elements = elements with a meaning.
+
+non-semantic elements:- <div> and <span>
+semantic elements:- <from>, <table> and <article>
+
+<section>
+<article>
+<header>
+<footer>
+<aside>
+<figure>
+<figcaption>
+ 
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images In HTMl</title>
+    <link rel="icon" type="image/x-icon" href="/Images/adv.jpeg">
+    <style>
+        body{
+            background-image: url("Images/adv.jpeg");
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<!-- Background Image -->
+<body>
+    <img src="Images/adv.jpeg" alt="Image">
+
+    <!-- Use Image Maps -->
+    <img src="Images/youtube.jpeg" alt="Map" usemap="#imagemap" width="400" height="400">
+
+    <map name="imagemap">
+        <area shape="rect" coords="30, 44, 270, 350" alt="Youtube" href="https://www.youtube.com/">
+    </map>
+
+    <!-- Picture element -->
+    
+    <h2>Picture element</h2>
+    <picture>
+        <source srcset="img_avatar.png">
+        <source srcset="img_girl.jpg">
+        <img src="Images/youtube.jpeg" alt="Beatles" style="width:auto;">
+    </picture>
+
+    <!-- Favicon -->
+
+    <h1>This is a heading</h1>
+</body>
+</html>
