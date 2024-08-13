@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Attributes</title>
+    <style>
+        form{
+            width:auto;
+            height: auto;
+            background-color: rgb(91, 56, 131);
+            padding: 5rem;
+        }
+        label{
+            margin-top: 5px;
+            color: chartreuse;
+        }
+        input{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+        <!-- disabled -->
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" value="Sonam" disabled><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" value="Gautam"><br>
+
+        <!-- Size -->
+        <label for="pin">PIN Code:</label>
+        <input type="text" id="pin" name="pin" size="6"><br>
+
+        <!-- maxlength -->
+        <label for="number">Mobile No:</label>
+        <input type="number" id="no" name="no" size="12" maxlength="12"><br>
+
+        <!-- min and max -->
+        <label for="address">Address:</label>
+        <input type="text" id="add" name="address" min = "12" max = "20"><br>
+
+        <!-- multiple -->
+        <label for="Select file">Select File:</label>
+        <input type="file" id="files" name="files" multiple><br>
+
+        <!-- The pattern attribute -->
+
+        <label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+
+        <!-- The placeholder Attribute -->
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91-8765536543" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+
+        <!-- The required attribute -->
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <!-- The step attribute -->
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3"><br>
+
+        <!-- The autofocus Attribute -->
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" autofocus><br>
+
+        <!-- The list Attribute -->
+        <input list="browsers">
+        <datalist id="brw">
+            <option value="YouTube">
+            <option value="FaceBook">
+            <option value="Instagram">
+        </datalist><br>
+
+        <!--  The autocomplete Attribute-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="off"><br>
+
+        <!-- The height and width Attributes -->
+         <input type="submit" placeholder="Submit" height="48" width="50">
+    </form>
+</body>
+</html>

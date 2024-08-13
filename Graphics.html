@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas and SVG</title>
+</head>
+<body>
+    <!-- The html canvas elemnet is used to draw graphics on a web page. -->
+
+    <canvas id="mycanvas" width="400" height="300" style="border:2px solid red;"></canvas>
+
+    <canvas id="myCan" width="200" height="300" style="border:2px solid rgb(6, 99, 73);"></canvas>
+
+    <canvas id="text" width="200" height="200" style="border:2px solid rgb(104, 103, 24);"></canvas>
+
+    <canvas id="grid" width="200" height="200" style="border:2px solid rgb(166, 12, 187);"></canvas>
+
+    <canvas id="cirl" width="200" height="200" style="border:2px solid rgb(164, 25, 69);"></canvas>
+
+
+    <script>
+        var c = document.getElementById("myCan");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(500,750);
+        ctx.stroke();
+
+
+        var d = document.getElementById("mycanvas");
+        var dtx = d.getContext("2d");
+        dtx.beginPath();
+        dtx.arc(95, 50, 40, 0, 2 * Math.PI);
+        dtx.stroke();
+
+        var t = document.getElementById("text");
+        var tx = t.getContext("2d");
+        tx.font = "30px Arial";
+        tx.fillText("Hello Guys!", 10,50);
+
+        var g = document.getElementById("grid");
+        var gx = g.getContext("2d");
+
+        var grd = gx.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        gx.fillStyle = grd;
+        gx.fillRect(10, 10, 150, 80);
+
+
+        var crl = document.getElementById("cirl");
+        var crlx = crl.getContext("2d");
+
+        var cr = crlx.createRadialGradient(75, 50, 5, 90, 60, 100);
+
+        cr.addColorStop(0, "yellow");
+        cr.addColorStop(1, "pink");
+
+        crlx.fillStyle = cr;
+        crlx.fillRect(10, 10, 150, 80);
+
+
+
+    </script>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="pink"></circle>
+
+    </svg>
+
+    <svg width="500" height="300">
+        <rect x="10" y="10" stroke="red" stroke-width="6" fill="green" width="400" height="200"></rect>
+    </svg>
+
+    <svg width="400" height="200">
+        <rect x="50" y="30" rx="30" ry="30" width="300" height="150" style="fill:red;stroke:black; opacity:0.5;" stroke-width="5"></rect>
+    </svg>
+
+    <svg width="300" height="200">
+        <polygon points="100, 10, 40, 198, 198, 78, 10, 78, 160, 198" style="fill:lime;stroke:aqua; stroke-width:5; fill-rule: evenodd;"></polygon>
+    </svg>
+
+
+    <svg height="130" width="500">
+        <defs>
+            <linearGradient id="grad1">
+                <stop offset="0%" stop-color="red" />
+                <stop offset="100%" stop-color="yellow" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG </text>
+    </svg>
+</body>
+</html>

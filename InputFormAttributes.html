@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form Attributes</title>
+</head>
+<body>
+    <!-- The form Attribute -->
+    <form action="/InputAttributes.html">
+        <label for="name">Name</label>
+        <input type="text" name="fname">
+        <input type="submit">
+    </form>
+
+    <!-- The formaction attribute -->
+    <form action="/InputAttributes.html">
+        <label for="name">Name</label>
+        <input type="text" name="fname">
+        <input type="submit" formaction="Forms.html">
+    </form>
+
+    <!-- The formenctype attribute -->
+    <form action="/InputAttributes.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="fname">
+        <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+    </form>
+
+    <!-- The formmethod attribute -->
+    <form action="/InputAttributes.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="fname">
+        <input type="submit" formmethod="post" value="Submit using POST">
+    </form>
+
+    <!-- The formtarget attribute -->
+    <form action="InputAttributes.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="fname">
+        <input type="submit" formtarget="_blank" value="Submi to a new window/tab">
+    </form>
+
+    <!-- The formnovalidate attribute -->
+    <form action="InputAttributes.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="fname">
+        <input type="submit" formnovalidate="formnovalidate" value="Submi without validation">
+    </form>
+
+
+    <!-- The novalidate attribute -->
+    <form action="InputAttributes.html" novalidate>
+        <label for="name">Name</label>
+        <input type="text" name="fname">
+        <input type="submit" formnovalidate="formnovalidate" value="Submit using to novalidate">
+    </form>
+
+</body>
+</html>

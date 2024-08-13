@@ -109,3 +109,21 @@ semantic elements:- <from>, <table> and <article>
 <figcaption>
  
 
+The UTF-8 Character Set------------->
+
+1. Is identical to ASCII for the values from 0 to 127.
+2. Does not use the Characters from 128 to 159.
+3. Identical to ANSI and 8859-1 from 160 to 255.
+4. Continues from the value 256 to 10000 Characters.
+
+What is XHTML?
+
+XHTML stands for Extensible HyperText Markup Language.
+XHTML is a stricter, more XML-based version of HTML.
+XHTML is HTML defined as an XML application.
+XHTML is supported by all major Browsers.
+
+What is HTML Forms?
+
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        form{
+            width:500px;
+            height: 400px;
+            background-color: rgb(11, 87, 87);
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            margin-left: 30%;
+            margin-top: 10%;
+            padding: 1rem;
+        }
+        form label{
+            color:beige;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+        }
+        form input{
+            width:100%;
+        }
+        form li{
+            list-style: none;
+        }
+        button{
+            align-items: center;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Enter the First name</label>
+        <input type="text" >
+        <label>Enter the Last name</label>
+        <input type="text" >
+        <label>Enter the Address</label>
+        <input type="text" >
+        <label>Select The Technologies</label>
+        <ul>
+            <li>
+                <input type="radio" value="HTML" name="technology">
+                <label>HTML</label>
+            </li>
+            <li>
+                <input type="radio" value="CSS" name="technology">
+                <label>CSS</label>
+            </li>
+            <li>
+                <input type="radio" value="JavaScript" name="technology">
+                <label>JavaScript</label>
+            </li>
+        </ul>
+        <label>Are you want to learn the best Technologies</label>
+        <input type="checkbox" name="yes/no" value="yes">
+
+        <label>Choose The Courses</label>
+        <select>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="Django">Django</option>
+        </select>
+
+        <button type="submit" onclick="alert('Data Successfully Submit!')">Submit</button>
+
+        
+    </form>
+</body>
+</html>
